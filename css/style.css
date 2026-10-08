@@ -1,0 +1,230 @@
+:root {
+  --tinta: #172554;
+  --azul: #2547d0;
+  --amarelo: #ffc94a;
+  --rosa: #f7b9c9;
+  --papel: #fff;
+  --nevoa: #eef2fb;
+  --borda: #b9c3e0;
+
+  --fonte-titulo: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --fonte-texto: "Bricolage Grotesque", Verdana, sans-serif;
+
+  --largura: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--fonte-texto);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--tinta);
+  background-color: var(--papel);
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--azul);
+  text-underline-offset: 0.15em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--tinta);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 7px var(--amarelo);
+}
+
+h1,
+h2,
+h3,
+h4,
+legend {
+  font-family: var(--fonte-titulo);
+  font-stretch: 85%;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6.5vw, 4.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 62ch;
+}
+
+.oculto-visualmente {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.container {
+  width: min(90%, var(--largura));
+  margin: 0 auto;
+}
+
+.secao {
+  padding: 4rem 0;
+}
+
+.secao.sem-topo {
+  padding-top: 0;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 3px solid var(--tinta);
+  border-radius: 8px;
+  background-color: var(--tinta);
+  color: var(--papel);
+  font-family: var(--fonte-texto);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.botao-secundario {
+  background-color: transparent;
+  color: var(--tinta);
+}
+
+.botao-secundario:hover {
+  background-color: var(--amarelo);
+  border-color: var(--tinta);
+}
+
+.cabecalho {
+  border-bottom: 3px solid var(--tinta);
+}
+
+.cabecalho .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.9rem;
+  font-weight: 800;
+  font-stretch: 85%;
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.menu-check,
+.menu-botao {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+.menu a {
+  font-weight: 700;
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--amarelo);
+  text-decoration-thickness: 6px;
+  text-underline-offset: 0.3em;
+}
+
+.rodape {
+  margin-top: 4rem;
+  padding: 3rem 0 2rem;
+  background-color: var(--tinta);
+  color: var(--papel);
+}
+
+.rodape-grade {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.rodape .logo {
+  color: var(--papel);
+}
+
+.rodape h2 {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+}
+
+.rodape ul {
+  list-style: none;
+}
+
+.rodape address {
+  font-style: normal;
+}
+
+.rodape a {
+  color: var(--papel);
+}
+
+.rodape a:hover {
+  color: var(--amarelo);
+}
+
+.rodape-copy {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
