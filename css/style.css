@@ -184,6 +184,174 @@ p {
   text-underline-offset: 0.3em;
 }
 
+.abertura {
+  padding: 3.5rem 0 4rem;
+}
+
+.abertura .container {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: end;
+  gap: 3rem;
+}
+
+.abertura h1 {
+  max-width: 13ch;
+}
+
+.abertura-texto > p {
+  margin: 1.5rem 0 2rem;
+  font-size: 1.25rem;
+}
+
+.abertura-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.abertura img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.abertura figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.pets {
+  padding: 4rem 0 5rem;
+  background-color: var(--nevoa);
+}
+
+.pets-intro {
+  margin-bottom: 3rem;
+}
+
+.grupo-pets + .grupo-pets {
+  margin-top: 3.5rem;
+}
+
+.grupo-pets > h3 {
+  margin-bottom: 1.6rem;
+  font-size: 1.9rem;
+}
+
+.grade-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2.5rem 2rem;
+  list-style: none;
+}
+
+.plaquinha {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.4rem 1rem 1.2rem;
+  border-radius: 22px;
+  background-color: var(--azul);
+  color: var(--papel);
+  rotate: -1.2deg;
+}
+
+.grade-pets li:nth-child(even) .plaquinha {
+  rotate: 1deg;
+}
+
+.plaquinha::before {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--tinta);
+  border-radius: 50%;
+  background-color: var(--nevoa);
+  translate: -50% 0;
+}
+
+.plaquinha-gato {
+  background-color: var(--rosa);
+  color: var(--tinta);
+}
+
+.plaquinha img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.plaquinha h4 {
+  margin: 0.9rem 0 0.6rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.plaquinha dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.plaquinha dt {
+  opacity: 0.8;
+}
+
+.plaquinha dd {
+  font-weight: 700;
+}
+
+.plaquinha p {
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+
+.plaquinha a {
+  font-weight: 700;
+  color: inherit;
+}
+
+.pets-rodape {
+  margin-top: 3.5rem;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  list-style: none;
+  counter-reset: passo;
+}
+
+.passos li {
+  padding-top: 1rem;
+  border-top: 3px solid var(--tinta);
+  counter-increment: passo;
+}
+
+.passos li::before {
+  content: counter(passo);
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--azul);
+}
+
+.passos h3 {
+  margin: 0.4rem 0;
+}
+
 .rodape {
   margin-top: 4rem;
   padding: 3rem 0 2rem;
