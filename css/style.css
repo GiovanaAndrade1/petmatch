@@ -352,6 +352,77 @@ p {
   margin: 0.4rem 0;
 }
 
+.topo-pagina {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.topo-pagina p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.tabela-container {
+  overflow-x: auto;
+  margin-bottom: 0.8rem;
+}
+
+.tabela {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela caption {
+  margin-bottom: 1rem;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 800;
+  font-stretch: 85%;
+  text-align: left;
+}
+
+.tabela th,
+.tabela td {
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+}
+
+.tabela thead th {
+  border-bottom: 3px solid var(--tinta);
+  font-size: 0.95rem;
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela tbody tr:nth-child(odd) {
+  background-color: var(--nevoa);
+}
+
+.tabela tfoot td {
+  border-top: 3px solid var(--tinta);
+  font-weight: 700;
+}
+
+.tabela .coluna-preco {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.gratis {
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--amarelo);
+  font-weight: 700;
+}
+
+.nota {
+  margin-bottom: 4rem;
+  font-size: 0.95rem;
+}
+
 .rodape {
   margin-top: 4rem;
   padding: 3rem 0 2rem;

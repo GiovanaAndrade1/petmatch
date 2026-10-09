@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datas das feiras de adoção da PetMatch e preços das vacinas.">
+  <title>Feiras e vacinas | PetMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo">PetMatch</a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="menu-botao">Menu</label>
+
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Adotar</a></li>
+          <li><a href="feiras.html" aria-current="page">Feiras e vacinas</a></li>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="cadastro.html">Pré-cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="topo-pagina">
+      <div class="container">
+        <h1>Feiras e vacinas</h1>
+        <p>Nas feiras você conhece os pets pessoalmente e já sai com o pré-cadastro feito. A entrada é livre.</p>
+      </div>
+    </header>
+
+    <div class="secao sem-topo">
+      <div class="container">
+        <div>
+          <div class="tabela-container">
+            <table class="tabela">
+              <caption>Próximas feiras de adoção</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Data</th>
+                  <th scope="col">Dia</th>
+                  <th scope="col">Horário</th>
+                  <th scope="col">Local</th>
+                  <th scope="col">Pets presentes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><time datetime="2026-10-17">17/10/2026</time></td>
+                  <td>Sábado</td>
+                  <td><time datetime="09:00">09h</time> às <time datetime="14:00">14h</time></td>
+                  <td>Praça da Liberdade</td>
+                  <td>Cães e gatos</td>
+                </tr>
+                <tr>
+                  <td><time datetime="2026-10-31">31/10/2026</time></td>
+                  <td>Sábado</td>
+                  <td><time datetime="10:00">10h</time> às <time datetime="16:00">16h</time></td>
+                  <td>Shopping Central — Piso L2</td>
+                  <td>Gatos</td>
+                </tr>
+                <tr>
+                  <td><time datetime="2026-11-15">15/11/2026</time></td>
+                  <td>Domingo</td>
+                  <td><time datetime="09:00">09h</time> às <time datetime="13:00">13h</time></td>
+                  <td>Parque Municipal</td>
+                  <td>Cães</td>
+                </tr>
+                <tr>
+                  <td><time datetime="2026-11-28">28/11/2026</time></td>
+                  <td>Sábado</td>
+                  <td><time datetime="10:00">10h</time> às <time datetime="15:00">15h</time></td>
+                  <td>Pet Shop Amigo Fiel</td>
+                  <td>Cães e gatos</td>
+                </tr>
+                <tr>
+                  <td><time datetime="2026-12-13">13/12/2026</time></td>
+                  <td>Domingo</td>
+                  <td><time datetime="09:00">09h</time> às <time datetime="17:00">17h</time></td>
+                  <td>Sede da PetMatch — Feira de Natal</td>
+                  <td>Cães e gatos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="nota">Se chover, a feira passa para o fim de semana seguinte. Avisamos no Instagram.</p>
+        </div>
+
+        <div>
+          <div class="tabela-container">
+            <table class="tabela">
+              <caption>Preço das vacinas</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Vacina</th>
+                  <th scope="col">Espécie</th>
+                  <th scope="col">Doses</th>
+                  <th scope="col">Protege contra</th>
+                  <th scope="col" class="coluna-preco">Valor por dose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">V10 (polivalente)</th>
+                  <td>Cão</td>
+                  <td>3 + reforço anual</td>
+                  <td>Cinomose, parvovirose, hepatite e leptospirose</td>
+                  <td class="coluna-preco"><data value="75.00">R$ 75,00</data></td>
+                </tr>
+                <tr>
+                  <th scope="row">Antirrábica</th>
+                  <td>Cão e gato</td>
+                  <td>1 + reforço anual</td>
+                  <td>Raiva</td>
+                  <td class="coluna-preco"><data value="0" class="gratis">Grátis</data></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gripe canina</th>
+                  <td>Cão</td>
+                  <td>2 + reforço anual</td>
+                  <td>Tosse dos canis</td>
+                  <td class="coluna-preco"><data value="90.00">R$ 90,00</data></td>
+                </tr>
+                <tr>
+                  <th scope="row">V4 (quádrupla felina)</th>
+                  <td>Gato</td>
+                  <td>2 + reforço anual</td>
+                  <td>Panleucopenia, rinotraqueíte, calicivirose e clamidiose</td>
+                  <td class="coluna-preco"><data value="85.00">R$ 85,00</data></td>
+                </tr>
+                <tr>
+                  <th scope="row">FeLV (leucemia felina)</th>
+                  <td>Gato</td>
+                  <td>2 + reforço anual</td>
+                  <td>Leucemia viral felina</td>
+                  <td class="coluna-preco"><data value="110.00">R$ 110,00</data></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Pets adotados na PetMatch pagam metade nos reforços</td>
+                  <td class="coluna-preco">50% off</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <p class="nota">O pet sai daqui com as vacinas em dia. Os preços são da Clínica Veterinária Lagoinha, nossa parceira, e valem para os reforços anuais.</p>
+        </div>
+
+        <p>Não consegue ir em nenhuma data? <a href="cadastro.html">Faça o pré-cadastro</a> e marcamos uma visita na sede.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div class="rodape-marca">
+          <a href="index.html" class="logo">PetMatch</a>
+          <p>ONG de resgate e adoção de cães e gatos em Belo Horizonte. CNPJ 00.000.000/0001-00.</p>
+        </div>
+
+        <nav aria-labelledby="rodape-navegacao">
+          <h2 id="rodape-navegacao">Páginas</h2>
+          <ul>
+            <li><a href="index.html">Adotar</a></li>
+            <li><a href="feiras.html">Feiras e vacinas</a></li>
+            <li><a href="sobre.html">Sobre a ONG</a></li>
+            <li><a href="cadastro.html">Pré-cadastro</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2>Fale com a gente</h2>
+          <address>
+            <p>Rua Itapecerica, 120, Lagoinha</p>
+            <p><a href="https://wa.me/5531999990000">WhatsApp (31) 99999-0000</a></p>
+            <p><a href="mailto:contato@petmatch.org">contato@petmatch.org</a></p>
+          </address>
+        </div>
+      </div>
+
+      <p class="rodape-copy"><small>&copy; 2026 PetMatch</small></p>
+    </div>
+  </footer>
+</body>
+</html>
