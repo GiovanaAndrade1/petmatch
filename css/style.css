@@ -423,6 +423,68 @@ p {
   font-size: 0.95rem;
 }
 
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: start;
+  gap: 3rem;
+}
+
+.historia p + p {
+  margin-top: 1rem;
+}
+
+.historia img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.frentes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+}
+
+.frentes dt {
+  margin-bottom: 0.3rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-stretch: 85%;
+}
+
+.ajuda {
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: var(--amarelo);
+}
+
+.ajuda ul {
+  margin: 1rem 0 0 1.2rem;
+}
+
+.ajuda li + li {
+  margin-top: 0.4rem;
+}
+
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.equipe li {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--borda);
+}
+
+.equipe strong {
+  display: block;
+  font-size: 1.15rem;
+}
+
 .rodape {
   margin-top: 4rem;
   padding: 3rem 0 2rem;
