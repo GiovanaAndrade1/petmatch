@@ -485,6 +485,149 @@ p {
   font-size: 1.15rem;
 }
 
+.formulario-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 3rem;
+}
+
+.formulario fieldset {
+  min-width: 0;
+  border: none;
+}
+
+.formulario > fieldset {
+  margin-bottom: 2.5rem;
+}
+
+.formulario > fieldset > legend {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3rem 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.campo-inteiro {
+  grid-column: 1 / -1;
+}
+
+.campo > label,
+.opcoes legend {
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  font-weight: 700;
+  font-stretch: normal;
+  line-height: 1.4;
+}
+
+.obrigatorio {
+  color: var(--azul);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 0.7rem 0.85rem;
+  border: 2px solid var(--borda);
+  border-radius: 6px;
+  background-color: var(--papel);
+  font-family: inherit;
+  font-size: 1.05rem;
+  color: var(--tinta);
+}
+
+.campo input:hover,
+.campo select:hover,
+.campo textarea:hover {
+  border-color: var(--tinta);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--tinta);
+  box-shadow: 0 0 0 4px var(--amarelo);
+}
+
+.campo input:user-invalid,
+.campo select:user-invalid,
+.campo textarea:user-invalid {
+  border-color: #b3261e;
+}
+
+.campo textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.opcoes legend {
+  margin-bottom: 0.5rem;
+}
+
+.opcoes label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 1.5rem 0.5rem 0;
+  cursor: pointer;
+}
+
+.opcoes input,
+.termos input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--azul);
+}
+
+.termos {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.termos input {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.formulario-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.aviso {
+  padding: 1.8rem;
+  border-radius: 6px;
+  background-color: var(--nevoa);
+}
+
+.aviso h2 {
+  font-size: 1.6rem;
+}
+
+.aviso ul {
+  margin-left: 1.2rem;
+}
+
+.aviso li + li {
+  margin-top: 0.6rem;
+}
+
 .rodape {
   margin-top: 4rem;
   padding: 3rem 0 2rem;

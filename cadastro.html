@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pré-cadastro para quem quer adotar um cão ou gato da PetMatch.">
+  <title>Pré-cadastro | PetMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo">PetMatch</a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="menu-botao">Menu</label>
+
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Adotar</a></li>
+          <li><a href="feiras.html">Feiras e vacinas</a></li>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="cadastro.html" aria-current="page">Pré-cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="topo-pagina">
+      <div class="container">
+        <h1>Pré-cadastro</h1>
+        <p>Leva uns 5 minutos. Com essas respostas a gente consegue indicar o pet que combina com a sua casa.</p>
+      </div>
+    </header>
+
+    <div class="secao sem-topo">
+      <div class="container formulario-layout">
+        <form class="formulario" action="#" method="get" aria-label="Pré-cadastro de adotante">
+          <fieldset>
+            <legend>Sobre você</legend>
+            <div class="campos">
+              <div class="campo campo-inteiro">
+                <label for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+              </div>
+              <div class="campo">
+                <label for="email">E-mail <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" required>
+              </div>
+              <div class="campo">
+                <label for="telefone">Telefone / WhatsApp <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(31) 99999-0000" required>
+              </div>
+              <div class="campo">
+                <label for="nascimento">Data de nascimento <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="date" id="nascimento" name="nascimento" autocomplete="bday" max="2008-10-14" required>
+              </div>
+              <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" maxlength="14">
+              </div>
+              <div class="campo">
+                <label for="cidade">Cidade <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="text" id="cidade" name="cidade" autocomplete="address-level2" required>
+              </div>
+              <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" autocomplete="postal-code" inputmode="numeric" placeholder="00000-000" pattern="\d{5}-?\d{3}" maxlength="9">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sobre a sua casa</legend>
+            <div class="campos">
+              <div class="campo">
+                <label for="moradia">Tipo de moradia <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <select id="moradia" name="moradia" required>
+                  <option value="">Selecione</option>
+                  <option value="casa-quintal">Casa com quintal</option>
+                  <option value="casa">Casa sem quintal</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="sitio">Sítio ou chácara</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="pessoas">Pessoas na casa</label>
+                <input type="number" id="pessoas" name="pessoas" min="1" max="20" value="1">
+              </div>
+              <fieldset class="campo-inteiro opcoes">
+                <legend>Já tem outros animais?</legend>
+                <label><input type="radio" name="outros-animais" value="nao" checked> Não</label>
+                <label><input type="radio" name="outros-animais" value="caes"> Sim, cães</label>
+                <label><input type="radio" name="outros-animais" value="gatos"> Sim, gatos</label>
+                <label><input type="radio" name="outros-animais" value="ambos"> Cães e gatos</label>
+              </fieldset>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>O pet</legend>
+            <div class="campos">
+              <fieldset class="campo-inteiro opcoes">
+                <legend>Espécie</legend>
+                <label><input type="checkbox" name="especie" value="cao"> Cão</label>
+                <label><input type="checkbox" name="especie" value="gato"> Gato</label>
+              </fieldset>
+              <div class="campo">
+                <label for="pet">Pet escolhido</label>
+                <select id="pet" name="pet">
+                  <option value="">Quero ajuda para escolher</option>
+                  <optgroup label="Cães">
+                    <option value="rex">Rex</option>
+                    <option value="thor">Thor</option>
+                    <option value="bob">Bob</option>
+                  </optgroup>
+                  <optgroup label="Gatos">
+                    <option value="luna">Luna</option>
+                    <option value="mia">Mia</option>
+                    <option value="nina">Nina</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="porte">Porte preferido</label>
+                <select id="porte" name="porte">
+                  <option value="indiferente">Indiferente</option>
+                  <option value="pequeno">Pequeno</option>
+                  <option value="medio">Médio</option>
+                  <option value="grande">Grande</option>
+                </select>
+              </div>
+              <div class="campo campo-inteiro">
+                <label for="motivo">Por que você quer adotar? <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <textarea id="motivo" name="motivo" rows="5" placeholder="Quanto tempo o pet ficaria sozinho? Já teve outros animais?" required></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <label class="termos">
+            <input type="checkbox" name="termos" required>
+            <span>Li e concordo com o termo de adoção responsável e sei que a PetMatch pode fazer uma visita antes da adoção. <span class="obrigatorio" aria-hidden="true">*</span></span>
+          </label>
+
+          <div class="formulario-acoes">
+            <button type="submit" class="botao">Enviar pré-cadastro</button>
+            <button type="reset" class="botao botao-contorno">Apagar respostas</button>
+          </div>
+        </form>
+
+        <aside class="aviso" aria-labelledby="titulo-aviso">
+          <h2 id="titulo-aviso">Bom saber</h2>
+          <ul>
+            <li>É preciso ter mais de 18 anos.</li>
+            <li>Na visita, leve documento com foto e comprovante de endereço.</li>
+            <li>A adoção não tem custo. Se quiser, pode doar o valor de uma vacina.</li>
+            <li>A Júlia ou outra voluntária liga em até 3 dias úteis.</li>
+            <li>Campos com <span class="obrigatorio">*</span> são obrigatórios.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div class="rodape-marca">
+          <a href="index.html" class="logo">PetMatch</a>
+          <p>ONG de resgate e adoção de cães e gatos em Belo Horizonte. CNPJ 00.000.000/0001-00.</p>
+        </div>
+
+        <nav aria-labelledby="rodape-navegacao">
+          <h2 id="rodape-navegacao">Páginas</h2>
+          <ul>
+            <li><a href="index.html">Adotar</a></li>
+            <li><a href="feiras.html">Feiras e vacinas</a></li>
+            <li><a href="sobre.html">Sobre a ONG</a></li>
+            <li><a href="cadastro.html">Pré-cadastro</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2>Fale com a gente</h2>
+          <address>
+            <p>Rua Itapecerica, 120, Lagoinha</p>
+            <p><a href="https://wa.me/5531999990000">WhatsApp (31) 99999-0000</a></p>
+            <p><a href="mailto:contato@petmatch.org">contato@petmatch.org</a></p>
+          </address>
+        </div>
+      </div>
+
+      <p class="rodape-copy"><small>&copy; 2026 PetMatch</small></p>
+    </div>
+  </footer>
+</body>
+</html>
