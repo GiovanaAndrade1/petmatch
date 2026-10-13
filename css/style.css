@@ -672,3 +672,88 @@ p {
   opacity: 0.8;
 }
 
+@media (max-width: 900px) {
+  .abertura .container,
+  .historia,
+  .formulario-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .passos,
+  .rodape-grade {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rodape-marca {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  .menu-check {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu-botao {
+    display: block;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid var(--tinta);
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .menu-check:checked + .menu-botao {
+    background-color: var(--amarelo);
+  }
+
+  .menu-check:focus-visible + .menu-botao {
+    outline: 3px solid var(--tinta);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 7px var(--amarelo);
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-check:checked ~ .menu {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 1rem;
+  }
+
+  .menu a {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--borda);
+  }
+
+  .secao,
+  .pets {
+    padding: 3rem 0;
+  }
+
+  .passos,
+  .frentes,
+  .campos,
+  .rodape-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-acoes .botao {
+    width: 100%;
+  }
+}
